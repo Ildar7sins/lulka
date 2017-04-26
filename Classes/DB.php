@@ -11,7 +11,7 @@ class DB
 	
 	public function __construct()
 	{
-		$this->dbh = new \PDO('mysql:dbname=Portfolio-php;host=localhost', 'root', '');
+		$this->dbh = new \PDO('mysql:dbname=lulka;host=localhost', 'root', '10125117');
 
 	}
 

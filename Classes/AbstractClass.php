@@ -59,10 +59,10 @@ abstract class AbstractClass
 		($sql,
 		[':value' => $value]);
 
-		if(empty($res))
-		{
-			throw new Exception("Error Processing Request", 1);
-		}
+		//if(empty($res))
+		//{
+		//	throw new Exception("Error Processing Request", 1);
+		//}
 		
 		return $res[0];
 		

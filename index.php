@@ -17,14 +17,13 @@ $method = 'action' . $act;
 	//$view->display('Error.php');
 	//die;
  //}
- 
-try {
 	$controller = new $controllerClassName;
 	$controller->$method();
+/*	
 } catch (Exception $e) {
 	$view = new View;
 	$view->display('Error.php');
 }
-
+*/
 
 
