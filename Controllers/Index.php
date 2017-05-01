@@ -35,7 +35,7 @@ class Index
 
 	public function actionOne()
 	{
-		$view = new \View;
+		$view = new View;
 		$view->display('Index.php');
 	}
 }

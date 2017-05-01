@@ -9,7 +9,7 @@ use App\Classes\AbstractClass;
 */
 class HeaderModel extends AbstractClass
 {
-	protected static $table = 'menu';
+	protected static $table = 'header';
 	protected static $class = 'Header';
 		
 
