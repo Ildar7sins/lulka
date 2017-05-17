@@ -1,15 +1,10 @@
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-    	<?php 
-    	include "js/bootstrap.min.js";
-    	include "js/preloader.js";
-        include "js/topbutton.js";
-        include "js/script.js";
-    	 ?>
-    </script>
-    <footer class="navbar-footer navbar-inverse text-center">
+   <script src="/js/topbutton.js"></script>
+   <script src="/js/script.js"></script>
+   <script src="/js/preloader.js"></script>
+   <footer class="navbar-footer navbar-inverse text-center">
     	
     	<!-- <i class="fa fa-envelope-o" style="color: white;" aria-hidden="true">  </i><a style="color: lightblue;" href="rinat@ufaprom.ru"> rinat@ufaprom.ru</a> -->
     </footer>

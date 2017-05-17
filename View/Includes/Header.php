@@ -40,13 +40,14 @@
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+
 
 	<!-- Bootstrap -->
-  <style type="text/css">
-    <?php  include "css/bootstrap.min.css";  ?>
-  </style>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <!-- Font Awesome-->
+  <script src="https://use.fontawesome.com/ce1f907689.js"></script>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,9 +55,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
-  <style type="text/css">
-    <?php include "css/style.css";  ?>
-  </style>
+
+  <!-- My css -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 
