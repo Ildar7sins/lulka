@@ -25,5 +25,3 @@ $method = 'action' . $act;
 	$view->display('Error.php');
 }
 */
-
-

@@ -1,6 +1,6 @@
 /*Preloader start*/
 .preloader{
-	background: darkgrey;
+	background: #F3BD39;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -11,11 +11,21 @@
 	transition: 1s all;
 }
 
+.text-preloader{
+	position: absolute;
+	top:50%; 
+	left: 50%; 
+	margin-top: -0.625em;
+	margin-left: -1.75em;
+	font-size: 16px;
+}
+
+
 .load{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	border: 2px solid white;
+	border: 2px solid black;
 	width: 75px;
 	height: 75px;
 	transform: translate(-50%, -50%);
@@ -39,7 +49,6 @@
 }
 
 /*Preloader end*/
-@media screen and (max-width: 495px) {
 
 textarea{
 height: 50px; 
@@ -55,15 +64,7 @@ input{
 	margin-right: 10px;
 }
 
-}
 
-@media screen and (min-width: 1200px) {
-textarea{
-height: 195px;
-width: 340px;
-} 
-
-}
 
 
 body{
@@ -90,6 +91,29 @@ float: none;
 display: inline-block;
 }
 
+.logo{
+	height: 70px;
+	padding: 0px;
+}
+
+.navbar-brand{
+	margin-left: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: darkslategrey;
+}
+
+.navbar-toggle{
+	margin: 7px;
+	margin-right: 17px;
+	margin-top: 25px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: darkgrey;
+}
+
 .fa-phone{
 	margin-top: 10px;
 }
@@ -108,9 +132,17 @@ display: inline-block;
 	background-color: white;
 }
 
+.table>tbody>tr.success>td, .table>tbody>tr.success>th, .table>tbody>tr>td.success, .table>tbody>tr>th.success, .table>tfoot>tr.success>td, .table>tfoot>tr.success>th, .table>tfoot>tr>td.success, .table>tfoot>tr>th.success, .table>thead>tr.success>td, .table>thead>tr.success>th, .table>thead>tr>td.success, .table>thead>tr>th.success {
+    background-color: skyblue;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #F3BD39;
+}
+
 .form{
 	/*background-color: grey;*/
-	background-image: url(http://cheb.almadom.ru/netcat_files/multifile/4127/7cf1af4eba6611e681bcedae3b33fa1e_8334be02ba6611e681bcedae3b33fa1e.jpeg);
+	background-image: url(/img/bgi-form.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -134,12 +166,13 @@ top: 150px;
 padding-left: 15px; 
 padding-top: 15px; */
 } 
-input[type="submit"]{background-color: #fed136; 
+#done{background-color: #fed136; 
 border: none; 
 border-radius: 10px;
 /*height: 65px; 
 width: 240px; */
 margin-top: 10px;
+margin-bottom: 20px;
 /*position: absolute;
 top: 400px; 
 left: 460px; */
@@ -147,7 +180,7 @@ color: white;
 font-size: 21px; 
 font-weight: normal;} 
 
-input[type="name"]{
+input[type="text"]{
  
 /*width: 440px; 
 height: 50px;*/
@@ -171,7 +204,7 @@ font-size: 20px;
 top: 230px; 
 left: 100px; */} 
 
-input[type="text"]{ 
+input[type="tel"]{ 
 /*width: 440px; 
 height: 50px; 
 /*top: 310px; 
@@ -205,7 +238,7 @@ input{
 .a-block:hover{
 	transition-duration: 1s;
 	transform: translate(0, -10px);
-	box-shadow: 5px 5px 8px #697B80;
+	box-shadow: 5px 5px 8px orange;
 }
 
 .circle img{
@@ -225,4 +258,89 @@ input{
 .navbar-footer{
 	color: white;
 	font-size: 14px;
+}
+/*Кнопка для перехода к началу страницы*/
+#toTop {
+	display: none;
+}
+
+@media screen and (max-width: 495px) {
+.img-lulka{
+	display: none;
+}
+li{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+li:last-child{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+}
+
+@media screen and (min-width: 495px) and (max-width: 991px) {
+.img-lulka{
+	display: none;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	#toTop {
+		width:150px;
+		height: 900px;
+		text-align:center;
+		padding:5px;
+		position:fixed;
+		bottom:10%; /* отступ кнопки от нижнего края страницы*/
+		right:0px;
+		cursor:pointer;
+		display:none;
+		color:#333;
+		font-family:verdana;
+		font-size:18px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	
+	li{
+		margin-top: 10px;
+	}
+
+	textarea{
+		height: 195px;
+		width: 340px;
+	} 
+	/*Кнопка для перехода к началу страницы*/
+	#toTop {
+		width:150px;
+		height: 900px;
+		text-align:center;
+		padding:5px;
+		position:fixed;
+		bottom:100px; /* отступ кнопки от нижнего края страницы*/
+		right:0%;
+		cursor:pointer;
+		display:none;
+		color:#333;
+		font-family:verdana;
+		font-size:18px;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	#toTop {
+		width:150px;
+		height: 900px;
+		text-align:center;
+		padding:5px;
+		position:fixed;
+		bottom:10%; /* отступ кнопки от нижнего края страницы*/
+		right:4%;
+		cursor:pointer;
+		display:none;
+		color:#333;
+		font-family:verdana;
+		font-size:18px;
+	}
 }

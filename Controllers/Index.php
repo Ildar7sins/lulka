@@ -17,11 +17,6 @@ class Index
 		//Получение данных из БД
 		$menu = IndexModel::getAll();
 		$headerCategories = HeaderModel::getAll();
-		try {
-		$articlesCategory = HeaderModel::getByColumnName('title', 'Главная') ;
-		} catch (ModelException $e) {
-			die('Something wrong...');
-		}
 		$article = new HeaderModel;
 		 
 		//Вывод в браузер
